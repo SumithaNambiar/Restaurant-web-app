@@ -3,10 +3,10 @@ import React from "react";
 const Footer=()=>{
     return(
     <footer>
-        <div class="column">
-        <img src="src/assets/icons_assets/Logo.svg" alt="Logo"></img>
+        <div className="column">
+        <img src={require("./Logo.svg").default} alt="Logo"></img>
         </div>
-        <div class="column">
+        <div className="column">
             <p>Doormat Navigation</p>
             <ul>
                  <li><a href="/home">Home</a></li>
@@ -17,7 +17,7 @@ const Footer=()=>{
                  <li><a href="/login">Login</a></li>
             </ul>
         </div>
-        <div class="column">
+        <div className="column">
             <p>Contact</p>
             <ul>
                 <li>Address</li>
@@ -25,7 +25,7 @@ const Footer=()=>{
                 <li><a href="/email"/>Email</li>
             </ul>
         </div>
-        <div class="column">
+        <div className="column">
             <p>Social Media Links</p>
             <ul>
                 <li><a href="/facebook" >Facebook</a></li>
@@ -33,7 +33,7 @@ const Footer=()=>{
             </ul>
         </div>
     </footer>
- )
+  )
  }
 
 export default Footer;
