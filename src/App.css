@@ -97,6 +97,7 @@ nav li a:hover {
 .image-content img {
   display: block;
   position: relative;
+  border-radius: 10pt;
   width:100%;
   z-index: 1000;
   width: 300px;
