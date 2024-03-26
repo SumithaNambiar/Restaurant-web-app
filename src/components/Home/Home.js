@@ -1,7 +1,20 @@
-import React from "react";
+function Home(){
+    return(
+        <div className="home">
+        <header className="header-section">
+                <div className="header-content">
+                    <div className="text-content">
+                        <h1>Little Lemon</h1>
+                        <h3>Chicago</h3>
+                        <p>Welcome to Little Lemon, where every dish tells a story of sun-soak ed shores and centuries-old culinary traditions. Situated in the heart of the city, our Mediterranean restaurant is a haven for food lovers seeking a taste of the vibrant flavours and warm hospitality of the region.</p>
+                        <button className="reserve-table">Reserve a Table</button>
+                    </div>
+                    <div class="image-content">
+                        <img src={require("./restauranfood.jpg")} alt="Restaurant"></img>
+                    </div>
+                </div>
+        </header>
 
-const Main = () => {
-    return (
         <main>
             <section>
                 <div className="section-heading">
@@ -48,7 +61,40 @@ const Main = () => {
                 </div>
             </section>
         </main>
-    );
-};
 
-export default Main;
+        <footer>
+            <div className="column">
+                <img src={require("./Logo.svg").default} alt="Logo"></img>
+            </div>
+            <div className="column">
+                <p>Doormat Navigation</p>
+                <ul>
+                 <li><a href="/home">Home</a></li>
+                 <li><a href="/about">About</a></li>
+                 <li><a href="/menu">Menu</a></li>
+                 <li><a href="/reservation">Reservation</a></li>
+                 <li><a href="/orderOnline">Order Online</a></li>
+                 <li><a href="/login">Login</a></li>
+                </ul>
+            </div>
+            <div className="column">
+                <p>Contact</p>
+                <ul>
+                    <li>Address</li>
+                    <li>Phone Number</li>
+                    <li><a href="/email"/>Email</li>
+                </ul>
+            </div>
+            <div className="column">
+                <p>Social Media Links</p>
+                <ul>
+                    <li><a href="/facebook" >Facebook</a></li>
+                    <li><a href="/instagram">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    )
+}
+
+export default Home;
