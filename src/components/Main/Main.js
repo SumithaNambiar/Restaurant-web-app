@@ -1,4 +1,6 @@
-function Home(){
+
+function Main(){
+
     return(
         <div className="home">
         <header className="header-section">
@@ -72,7 +74,7 @@ function Home(){
                  <li><a href="/home">Home</a></li>
                  <li><a href="/about">About</a></li>
                  <li><a href="/menu">Menu</a></li>
-                 <li><a href="/reservation">Reservation</a></li>
+                 <li><a href="/bookingPage">Booking Page</a></li>
                  <li><a href="/orderOnline">Order Online</a></li>
                  <li><a href="/login">Login</a></li>
                 </ul>
@@ -97,4 +99,4 @@ function Home(){
     )
 }
 
-export default Home;
+export default Main;
